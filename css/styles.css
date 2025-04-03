@@ -351,55 +351,61 @@ header {
 }
 
 
+/* Container for Experience Section */
+.experiences {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
 
+/* Styled Card for Each Experience */
 .experience-item {
-    position: relative;
-    padding-left: 30px;
+    background: #222;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Title & Meta Data */
+.experience-title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.experience-title-container img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.experience-title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
     margin-left: 15px;
 }
 
-.experience-item::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 2px;
-    background: linear-gradient(180deg, #5badff 0%, #1373d1 100%);
+.date {
+    margin-left: auto;
+    font-size: 14px;
+    color: #aaa;
 }
 
-.experience-title-container {
-    position: relative;
+/* Experience Description */
+.experience-item p {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.5;
 }
 
-.experience-title-container::after {
-    content: '';
-    position: absolute;
-    left: -23px;
-    top: 15px;
-    width: 12px;
-    height: 12px;
-    background: #5badff;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #5badff;
-}
-
-.experience-with-lang div {
-    transition: transform 0.3s ease;
-}
-
-.experience-with-lang div:hover {
-    transform: translateY(-10px);
-}
-
-.experience-with-lang img {
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
-}
-
-.experience-with-lang div:hover img {
-    filter: grayscale(0%);
-}
 
 .email-container {
     transition: transform 0.3s ease;
