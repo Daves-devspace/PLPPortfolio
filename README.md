@@ -48,6 +48,7 @@ Code Structure
 Below is the structure of the project:
 
 portfolio/
+
 ├── css/
 │   └── styles.css        # Main stylesheet with component styles and animations
 ├── images/               # Image assets (logos, hero images, etc.)
